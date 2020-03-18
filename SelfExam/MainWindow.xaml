@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SelfExam"
         mc:Ignorable="d"
-        Title="MainWindow" Height="150" Width="250" ResizeMode="NoResize">
+        Title="MainWindow" Height="170" Width="250" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -15,9 +15,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="새 시험 생성" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"/>
-        <Button Content="시험 열기" Grid.Row="0" Grid.Column="1" Margin="15,15,15,15"/>
-        <Button Content="시험 편집" Grid.Row="1" Grid.Column="0" Margin="15,15,15,15"/>
-        <Button Content="기타 설정" Grid.Row="1" Grid.Column="1" Margin="15,15,15,15"/>
+        <Button Name="CreateButton" Content="새 시험 생성" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15" Click="CreateButton_Click"/>
+        <Button Name="OpenButton" Content="시험 열기" Grid.Row="0" Grid.Column="1" Margin="15,15,15,15" Click="OpenButton_Click"/>
+        <Button Name="EditButton" Content="시험 편집" Grid.Row="1" Grid.Column="0" Margin="15,15,15,15" Click="EditButton_Click"/>
+        <Button Name="SettingButton" Content="기타 설정" Grid.Row="1" Grid.Column="1" Margin="15,15,15,15" Click="SettingButton_Click"/>
     </Grid>
 </Window>

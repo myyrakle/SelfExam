@@ -24,5 +24,25 @@ namespace SelfExam
         {
             InitializeComponent();
         }
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ExamWindow().Show();
+        }
+
+        private void OpenButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ExamWindow().Show();
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            new ExamWindow().Show();
+        }
+
+        private void SettingButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
