@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SelfExam"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="150" Width="250" ResizeMode="NoResize">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="새 시험 생성" Grid.Row="0" Grid.Column="0" Margin="15,15,15,15"/>
+        <Button Content="시험 열기" Grid.Row="0" Grid.Column="1" Margin="15,15,15,15"/>
+        <Button Content="시험 편집" Grid.Row="1" Grid.Column="0" Margin="15,15,15,15"/>
+        <Button Content="기타 설정" Grid.Row="1" Grid.Column="1" Margin="15,15,15,15"/>
     </Grid>
 </Window>
